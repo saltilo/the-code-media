@@ -1,1 +1,1 @@
-https://saltilo.github.io/the-code-media/FruitMachine
+https://saltilo.github.io/the-code-media/FruitMachine/index.html
