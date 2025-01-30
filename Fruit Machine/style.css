@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+  background: #293544;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  margin-left: -300px;
+  border-radius: 30px;
+  background: #5d9bfd;
+  background: radial-gradient(ellipse at center, #2c7dfd 1%, #5d9bfd 65%);
+}
+
+.controls,
+.logo {
+  display: block;
+  position: relative;
+  height: 55px;
+  text-align: center;
+  width: 80px;
+  font-size: 40px;
+  padding: 0 10px 15px;
+  line-height: 76px;
+  background: #b5b5b5;
+  margin: 0 auto;
+}
+
+.controls {
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+}
+
+.logo {
+  border-radius: 20px 20px 0 0;
+  margin-top: 50px;
+}
+
+.container,
+.controls,
+.logo {
+  box-shadow: 10px 10px 50px 0px rgba(255, 255, 255, 0.2);
+}
+
+.reel {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 1800%;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  animation: reel 1.75s linear 2;
+  overflow: hidden;
+}
+
+.inner {
+  display: block;
+  height: 66%;
+  overflow: hidden;
+  font-size: 130px;
+  line-height: 216px;
+  width: 200px;
+}
+
+.first {
+  left: 0px;
+  animation-delay: -0.5s;
+}
+
+.second {
+  left: 200px;
+  animation-delay: -0.2s;
+}
+
+.third {
+  left: 400px;
+  animation-delay: 0s;
+}
+
+@keyframes reel {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -1187%;
+  }
+}
